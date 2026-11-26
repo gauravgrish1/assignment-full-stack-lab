@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 36px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #f9f4e8;
+    background:
+        radial-gradient(circle at 20% 15%, rgba(80, 120, 99, 0.35), transparent 28rem),
+        linear-gradient(145deg, #172b27, #263d35 55%, #172522);
+}
+
+.game {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    color: #f0d7a0;
+    font-size: clamp(28px, 5vw, 40px);
+    letter-spacing: 1px;
+}
+
+.game p {
+    margin: 8px 0 24px;
+    color: #c4d2c8;
+}
+
+#chessboard {
+    width: min( min(80vw, 560px), calc(100vh - 180px));
+    min-width: 280px;
+    aspect-ratio: 1;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    overflow: hidden;
+    border: 8px solid #6c4930;
+    border-radius: 8px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 0 2px #d1ad70;
+}
+
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Segoe UI Symbol", "Noto Sans Symbols 2", "DejaVu Sans", sans-serif;
+    font-size: clamp(22px, 6vw, 48px);
+    line-height: 1;
+    user-select: none;
+}
+
+.light {
+    background: #f0dfbd;
+}
+
+.dark {
+    background: #729078;
+}
+
+.black-piece {
+    color: #26332d;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.45);
+}
+
+.white-piece {
+    color: #fffaf0;
+    text-shadow: 0 2px 3px rgba(39, 44, 37, 0.8);
+}
+
+@media (max-width: 380px) {
+    #chessboard {
+        min-width: 0;
+        width: min(92vw, calc(100vh - 170px));
+        border-width: 5px;
+    }
+}

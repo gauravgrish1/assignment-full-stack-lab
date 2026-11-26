@@ -1,0 +1,15 @@
+{
+  "name": "q12-ecommerce",
+  "version": "1.0.0",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5",
+    "stripe": "^17.5.0"
+  }
+}

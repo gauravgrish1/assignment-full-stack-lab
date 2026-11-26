@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q12 Shop</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="/">Everyday Shop</a>
+        <nav>
+            <a href="#products">Shop</a>
+            <a href="#cart">Cart <span id="cart-count">0</span></a>
+            <a href="#orders">Orders</a>
+            <a href="#seller">Seller</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p class="eyebrow">Good finds, every day</p>
+            <h1>Small things.<br>Better days.</h1>
+            <p>Explore useful picks for home, work, and everywhere in between.</p>
+        </section>
+
+        <section id="products" class="section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Our collection</p>
+                    <h2>Shop products</h2>
+                </div>
+                <p id="store-message" class="message" aria-live="polite"></p>
+            </div>
+            <div id="product-list" class="product-grid"></div>
+        </section>
+
+        <section id="cart" class="section">
+            <p class="eyebrow">Ready when you are</p>
+            <h2>Your cart</h2>
+            <div id="cart-items" class="cart-items"></div>
+            <div class="cart-footer">
+                <strong id="cart-total">Total: ₹0.00</strong>
+                <button id="checkout-button" class="button">Checkout securely</button>
+            </div>
+            <p id="cart-message" class="message" aria-live="polite"></p>
+        </section>
+
+        <section id="orders" class="section">
+            <p class="eyebrow">Your purchases</p>
+            <h2>Successful orders</h2>
+            <div id="order-list" class="order-list"></div>
+        </section>
+
+        <section id="seller" class="section seller-section">
+            <p class="eyebrow">Store management</p>
+            <h2>Seller panel</h2>
+            <p>Add a product or choose Edit on an existing product. Enter the seller password set in `.env`.</p>
+            <form id="product-form" class="seller-form">
+                <input id="seller-password" type="password" placeholder="Seller password" required>
+                <input id="product-name" type="text" placeholder="Product name" required>
+                <textarea id="product-description" placeholder="Description" required></textarea>
+                <input id="product-price" type="number" min="1" step="0.01" placeholder="Price (INR)" required>
+                <div class="form-actions">
+                    <button id="save-product" class="button" type="submit">Add product</button>
+                    <button id="cancel-edit" class="button secondary" type="button" hidden>Cancel edit</button>
+                </div>
+            </form>
+            <p id="seller-message" class="message" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>Secure payments powered by Stripe Checkout.</footer>
+    <script src="/app.js"></script>
+</body>
+</html>

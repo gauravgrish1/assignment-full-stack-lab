@@ -1,0 +1,12 @@
+<%- include("partials/header") %>
+<h1>Products</h1>
+<div class="grid">
+    <% products.forEach(function(product) { %>
+        <article class="product-card">
+            <p class="category"><%= product.category %></p>
+            <h2><%= product.name %></h2>
+            <strong>₹<%= product.price.toLocaleString("en-IN") %></strong>
+        </article>
+    <% }) %>
+</div>
+<%- include("partials/footer") %>

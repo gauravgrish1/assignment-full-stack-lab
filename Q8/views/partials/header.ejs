@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> | Express App</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a class="brand" href="/">ExpressApp</a>
+        <nav>
+            <a class="<%= page === 'home' ? 'active' : '' %>" href="/">Home</a>
+            <a class="<%= page === 'about' ? 'active' : '' %>" href="/about">About</a>
+            <a class="<%= page === 'products' ? 'active' : '' %>" href="/products">Products</a>
+            <a class="<%= page === 'contact' ? 'active' : '' %>" href="/contact">Contact</a>
+        </nav>
+    </header>
+    <main class="container">

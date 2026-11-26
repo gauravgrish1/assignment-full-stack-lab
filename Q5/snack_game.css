@@ -1,7 +1,8 @@
 body {
     text-align: center;
-    font-family: Arial;
-    background: #f2f2f2;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #090e1a, #312e81);
+    color: #e0e7ff;
 }
 
 #board {
@@ -15,8 +16,9 @@ body {
 .cell {
     width: 50px;
     height: 50px;
-    border: 1px solid black;
-    background: lightyellow;
+    border: 1px solid #a5b4fc;
+    background: #eef2ff;
+    color: #1e1b4b;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,11 +28,11 @@ body {
 }
 
 .snake {
-    background: #ffaaaa;
+    background: #f9a8d4;
 }
 
 .ladder {
-    background: #aaffaa;
+    background: #67e8f9;
 }
 
 .players {

@@ -1,7 +1,7 @@
 
 body {
     font-family: Arial;
-    background-color: #e0f2f1;
+    background: linear-gradient(135deg, #090e1a, #312e81);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    background-color: white;
+    background: rgba(255, 255, 255, 0.96);
     width: 400px;
     padding: 30px;
     text-align: center;

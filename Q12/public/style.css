@@ -1,7 +1,7 @@
 :root {
     font-family: Arial, sans-serif;
-    color: #23332d;
-    background: #f7f8f4;
+    color: #dbeafe;
+    background: #090e1a;
 }
 
 * {
@@ -17,7 +17,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 18px max(5%, calc((100% - 1100px) / 2));
-    background: #183c32;
+    background: #111827;
+    border-bottom: 1px solid rgba(34, 211, 238, 0.25);
     color: white;
 }
 
@@ -46,7 +47,7 @@ main {
     margin: 40px 0;
     padding: 55px;
     border-radius: 14px;
-    background: #e6eee6;
+    background: linear-gradient(135deg, #172554, #312e81);
 }
 
 .intro h1 {

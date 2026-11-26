@@ -1,5 +1,9 @@
 body {
     margin: 0;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(34, 211, 238, 0.18), transparent 22rem),
+        radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.22), transparent 24rem),
+        #090e1a;
 }
 
 .container {
@@ -10,19 +14,20 @@ body {
 }
 
 .circle1 {
-    width: 60px;
-    height: 60px;
-    background-color: red;
+    width: 92px;
+    height: 92px;
+    background: linear-gradient(135deg, #22d3ee, #818cf8);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 30px rgba(34, 211, 238, 0.42);
 }
 
 .circle2 {
-    width: 40px;
-    height: 40px;
-    background-color: yellow;
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #a78bfa, #f472b6);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -30,8 +35,8 @@ body {
 }
 
 .circle3 {
-    width: 20px;
-    height: 20px;
-    background-color: blue;
+    width: 34px;
+    height: 34px;
+    background: linear-gradient(135deg, #fff, #c4b5fd);
     border-radius: 50%;
 }

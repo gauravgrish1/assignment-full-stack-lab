@@ -5,8 +5,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f4f7fb;
-    color: #1f2933;
+    background: linear-gradient(135deg, #090e1a, #172554);
+    color: #dbeafe;
 }
 
 .container {
@@ -32,7 +32,7 @@ button {
 }
 
 button {
-    background: blue;
+    background: linear-gradient(135deg, #7c3aed, #22d3ee);
     color: white;
 }
 
